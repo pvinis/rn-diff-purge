@@ -10,7 +10,7 @@
     "markdown-table": "^1.1.3",
     "markdown-to-html": "^0.0.13",
     "ramda": "^0.26.1",
-    "semver": "^6.1.2"
+    "semver": "^6.2.0"
   },
   "devDependencies": {
     "eslint": "^6.0.1"
