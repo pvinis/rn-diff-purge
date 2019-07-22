@@ -47,7 +47,7 @@ function generateNewReleaseBranch () {
     git checkout -b "$branchName"
 
     # generate app
-    react-native init "$AppName" --version "$newRelease"
+    npx react-native init "$AppName" --version "$newRelease"
 
     # commit and push branch
     git add "$AppName"
@@ -130,7 +130,8 @@ function generateReadme () {
 }
 
 function generateGHPages () {
-    yarn --silent markdown "$ReadmeTableBig" > docs/index.html
+    cp docs/_index.html docs/index.html
+    yarn --silent markdown "$ReadmeTableBig" >> docs/index.html
 }
 
 function cleanUp () {
