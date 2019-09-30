@@ -13,6 +13,6 @@
     "semver": "^6.0.0"
   },
   "devDependencies": {
-    "eslint": "^6.0.0"
+    "eslint": "^6.5.0"
   }
 }
